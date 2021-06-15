@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div id="brandname">
+                Spam detector App using NLP and Machine Learning
+            </div>
+            <h2>Spam Detector for Email Messages</h2>
+            </div>
+    </header>
+    <div class="ml-container">
+        <form action="{{url_for('predict')}}" method="POST">
+            <p>Enter your email/message here which you want to predict</p>
+            <textarea name="message" rows="6" cols="50"></textarea>
+            <br>
+           <br>
+            <input type="Submit" class="btn-info" value="Predict">
+        </form>
+    </div>
+</body>
+</html>

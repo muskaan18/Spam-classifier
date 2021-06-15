@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prediction</title>
+        <link rel="stylesheet" type="text/css" href="static/style.css">
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <div id="brandname">
+                ML App
+            </div>
+            <h2>Spam Detector for spam messages</h2>
+        </div>
+    </header>
+
+    <p style="color:rgb(207, 97, 211);font-size:30;text-align:center;"><b>Result</b></p>
+    <div class="results">
+        {% if prediction == 1%}
+        <h1 style="color:red;text-align:center;font-size: xx-large;">SPAM!!</h1>
+        {% elif prediction == 0%}
+        <h1 style="color:rgb(10, 95, 23);text-align:center;font-size: xx-large;"><b>NOT A SPAM</b></h1>
+        {% endif %}
+</div>
+</body>
+</html>
